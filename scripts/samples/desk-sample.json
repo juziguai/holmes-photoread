@@ -1,0 +1,16 @@
+{
+  "observations": [
+    { "id": "O1", "what": "机械键盘", "where": "画面正中", "detail": "白色键帽，WASD 与空格键有明显油光，其余键帽哑光", "confidence": "high" },
+    { "id": "O2", "what": "两台显示器", "where": "画面上方", "detail": "左侧竖屏，右侧横屏，装在同一支显示器支架上", "confidence": "high" },
+    { "id": "O3", "what": "三个杯子", "where": "键盘右上方", "detail": "两个马克杯空着、一个带茶叶的玻璃杯半满", "confidence": "high" },
+    { "id": "O4", "what": "笔记本电脑合着", "where": "显示器左下", "detail": "盖子上贴有 Python、Kubernetes、PyCon 贴纸，边角有磕碰", "confidence": "high" },
+    { "id": "O5", "what": "便利贴", "where": "右侧显示器下边缘", "detail": "四张黄色便利贴，内容是待办条目，字迹潦草", "confidence": "medium" },
+    { "id": "O6", "what": "猫毛", "where": "键盘左侧桌面与腕托上", "detail": "浅色短毛零星分布", "confidence": "medium" },
+    { "id": "O7", "what": "考研英语真题册", "where": "桌面右侧边缘", "detail": "书脊有折痕，夹着多张彩色索引贴", "confidence": "high" },
+    { "id": "O8", "what": "登机牌", "where": "键盘下方露出一角", "detail": "可见 PEK 字样与日期打印，边角卷起", "confidence": "low" },
+    { "id": "O9", "what": "外卖餐盒", "where": "桌面左下角", "detail": "已空，餐具插在盒里", "confidence": "high" },
+    { "id": "O10", "what": "台灯", "where": "画面右上", "detail": "开着，画面整体偏暗，窗帘拉着", "confidence": "medium" },
+    { "id": "O11", "what": "USB 线与充电线", "where": "显示器支架后方", "detail": "五六根线未整理，含 Type-C、Lightning、Micro-USB", "confidence": "medium" },
+    { "id": "O12", "what": "绿植", "where": "左侧显示器旁", "detail": "叶尖发黄，土壤干裂", "confidence": "medium" }
+  ]
+}

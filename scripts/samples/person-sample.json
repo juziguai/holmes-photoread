@@ -1,0 +1,17 @@
+{
+  "frame": { "orientation": "portrait", "dominant_color": "灰蓝" },
+  "observations": [
+    { "id": "O1", "what": "右手虎口与掌根有一排连成片的厚茧", "where": "右手", "detail": "左手同位置皮肤平滑", "confidence": "high" },
+    { "id": "O2", "what": "手表戴在右手腕", "where": "右手腕", "detail": "表带是磨旧的尼龙织带，表盘有划痕", "confidence": "high" },
+    { "id": "O3", "what": "左前臂内侧缠着一串深色木质珠子", "where": "左前臂", "detail": "珠子表面被摩挲得发亮", "confidence": "high" },
+    { "id": "O4", "what": "冲锋衣左胸有一块颜色略浅的方形印记", "where": "左胸", "detail": "边界清晰，像是长期别过什么东西又取下", "confidence": "medium" },
+    { "id": "O5", "what": "裤子膝盖处有两块加厚补片，右膝的磨损明显重于左膝", "where": "双膝", "detail": "补片是原厂设计不是后补", "confidence": "high" },
+    { "id": "O6", "what": "鞋是高帮工装靴，鞋头包铁，鞋带只系到倒数第二排孔", "where": "双脚", "detail": "鞋侧有干燥的灰白色粉末", "confidence": "high" },
+    { "id": "O7", "what": "脸颊与颈部有色差，界限在下颌线以上", "where": "面部与颈部", "detail": "耳后与颈侧较白", "confidence": "medium" },
+    { "id": "O8", "what": "额头发际线一圈压痕，头发被压出环形凹陷", "where": "额头与头顶", "detail": "", "confidence": "high" },
+    { "id": "O9", "what": "指甲剪得很短，甲缝里有洗不净的深色", "where": "双手", "detail": "两只手一致", "confidence": "medium" },
+    { "id": "O10", "what": "腰间挂着一个卷尺和一串挂片", "where": "腰部右侧", "detail": "挂片上有编号和条码", "confidence": "high" },
+    { "id": "O11", "what": "背景桌面上露出一个白色药盒的一角", "where": "画面右后方", "detail": "标签朝下看不清", "confidence": "low" },
+    { "id": "O12", "what": "手机屏幕朝上放在桌上，屏幕有横向裂纹", "where": "画面右下", "detail": "", "confidence": "medium" }
+  ]
+}

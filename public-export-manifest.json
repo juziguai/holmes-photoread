@@ -1,0 +1,520 @@
+{
+  "generated_at": "2026-10-11T11:00:48.691807+00:00",
+  "source_basis": "explicit allowlist (not copy-then-delete)",
+  "source_repo_basis": "git tracked files only",
+  "files": [
+    {
+      "source_relative_path": ".github/ISSUE_TEMPLATE/bug.md",
+      "destination_relative_path": ".github/ISSUE_TEMPLATE/bug.md",
+      "sha256": "8ec179dd8fdc6c932e66a91078d883f330e85104a2c9266fdd2f2259d29d04ae",
+      "reason": "issue/PR templates",
+      "classification": "public-repo-templates"
+    },
+    {
+      "source_relative_path": ".github/ISSUE_TEMPLATE/new-trace.md",
+      "destination_relative_path": ".github/ISSUE_TEMPLATE/new-trace.md",
+      "sha256": "19ef55de0b8aec5ffd635e0371e5a78714ee53725f136c2c44a719c1c7b68b6a",
+      "reason": "issue/PR templates",
+      "classification": "public-repo-templates"
+    },
+    {
+      "source_relative_path": ".github/ISSUE_TEMPLATE/wrong-reading.md",
+      "destination_relative_path": ".github/ISSUE_TEMPLATE/wrong-reading.md",
+      "sha256": "f96e77c17a603e1718b358d941649d9a9dcff9d8f7d75f584683ad02e2edcb71",
+      "reason": "issue/PR templates",
+      "classification": "public-repo-templates"
+    },
+    {
+      "source_relative_path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "destination_relative_path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "c03b36c7bf641ef0c34bf45846cc10ad17245a76fb7852b0fb56f48bee1ec587",
+      "reason": "issue/PR templates",
+      "classification": "public-repo-templates"
+    },
+    {
+      "source_relative_path": ".gitignore",
+      "destination_relative_path": ".gitignore",
+      "sha256": "2fe9240a728f8f643989750b1181d78e1e8364b476537f80deec961b402cc28e",
+      "reason": "git ignore rules",
+      "classification": "repo-config"
+    },
+    {
+      "source_relative_path": ".mise.toml",
+      "destination_relative_path": ".mise.toml",
+      "sha256": "a6bb7ed953f8ec597ad1aa3942c535986dda07885f55fb25c9a8476a056fc5d7",
+      "reason": "toolchain pinning",
+      "classification": "toolchain-config"
+    },
+    {
+      "source_relative_path": "CONTRIBUTING.md",
+      "destination_relative_path": "CONTRIBUTING.md",
+      "sha256": "ba69c63c1d10f9be290174ce1d9839a0ea787ba64d550517239ab6c60f3cd989",
+      "reason": "contribution guide",
+      "classification": "public-docs"
+    },
+    {
+      "source_relative_path": "LICENSE",
+      "destination_relative_path": "LICENSE",
+      "sha256": "1a85c39f9d6bc011bcba390dbfadda0647def9575499a06eaab4c6ad9bf1c5df",
+      "reason": "project license",
+      "classification": "public-license"
+    },
+    {
+      "source_relative_path": "README.md",
+      "destination_relative_path": "README.md",
+      "sha256": "7e92053e208d59d013a6f841280c1a27d047f52f42dec2e84dc08c7b8b62d80b",
+      "reason": "project readme",
+      "classification": "public-docs"
+    },
+    {
+      "source_relative_path": "README.zh-CN.md",
+      "destination_relative_path": "README.zh-CN.md",
+      "sha256": "ab98c0937bfdbd40f1b6e20b085d4145fc26ad3590b7ab5c32ab36e68bea7a1d",
+      "reason": "chinese readme",
+      "classification": "public-docs"
+    },
+    {
+      "source_relative_path": "docs/hero.gif",
+      "destination_relative_path": "docs/hero.gif",
+      "sha256": "ad776e8bb68d9396cfaae367ae81ce55fef76993d211cf3f0e49389547154b10",
+      "reason": "documentation assets",
+      "classification": "public-assets"
+    },
+    {
+      "source_relative_path": "docs/hero.zh-CN.gif",
+      "destination_relative_path": "docs/hero.zh-CN.gif",
+      "sha256": "ca9eded30618d6d7d86b9d2cd1ba5880ff50438bab425a715fb677ea8bb3f39c",
+      "reason": "documentation assets",
+      "classification": "public-assets"
+    },
+    {
+      "source_relative_path": "docs/social-preview.png",
+      "destination_relative_path": "docs/social-preview.png",
+      "sha256": "c07b4cfb80d23327665cf8660cbc6616b49b06bd438bed4f811ef57cac197cfd",
+      "reason": "documentation assets",
+      "classification": "public-assets"
+    },
+    {
+      "source_relative_path": "index.html",
+      "destination_relative_path": "index.html",
+      "sha256": "274d8e8691324785bae9d69ec40fc9d8918ec68e1d657b9a129007fafc8de424",
+      "reason": "landing page",
+      "classification": "public-web"
+    },
+    {
+      "source_relative_path": "logs/.gitkeep",
+      "destination_relative_path": "logs/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "runtime dir placeholder",
+      "classification": "placeholder"
+    },
+    {
+      "source_relative_path": "package.json",
+      "destination_relative_path": "package.json",
+      "sha256": "ea2922115a964728a87c0c892e5bc022bf3e92a48b6737c0534bdc3a0128a3b6",
+      "reason": "npm manifest",
+      "classification": "package-metadata"
+    },
+    {
+      "source_relative_path": "photos/.gitkeep",
+      "destination_relative_path": "photos/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "assets dir placeholder",
+      "classification": "placeholder"
+    },
+    {
+      "source_relative_path": "pnpm-lock.yaml",
+      "destination_relative_path": "pnpm-lock.yaml",
+      "sha256": "7d8d11ae87967a3ef9b21c426f549d888e6beb4f92ce67df4c71b4b63c59e179",
+      "reason": "lockfile",
+      "classification": "package-metadata"
+    },
+    {
+      "source_relative_path": "public/favicon.svg",
+      "destination_relative_path": "public/favicon.svg",
+      "sha256": "9399bfbbeccd460887649caeb712c176ec43410a7127a9e134ee0e9e54959401",
+      "reason": "static assets",
+      "classification": "public-assets"
+    },
+    {
+      "source_relative_path": "scripts/build-skill.ts",
+      "destination_relative_path": "scripts/build-skill.ts",
+      "sha256": "2294a29bfd559ba73cc832ebaa8bcb3d831cad1c4d42d68bc7490062bb9cc4d8",
+      "reason": "build/test scripts",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "scripts/probe.ts",
+      "destination_relative_path": "scripts/probe.ts",
+      "sha256": "a2c1a088c74a9ddae375fd83b8b48fa7d6b91c6ef2ef7fdc8d44e966b5a394c9",
+      "reason": "build/test scripts",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "scripts/samples/desk-sample.json",
+      "destination_relative_path": "scripts/samples/desk-sample.json",
+      "sha256": "147d9d4cd82f8820cadbde086832929477bc6d953824564f3c3361b44390b9c2",
+      "reason": "build/test scripts",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "scripts/samples/person-sample.json",
+      "destination_relative_path": "scripts/samples/person-sample.json",
+      "sha256": "5ee70e98fa29e7aeaaab11f3f1aebfa380d539c06c398db2aad5bd67d7b24707",
+      "reason": "build/test scripts",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "scripts/skill.test.ts",
+      "destination_relative_path": "scripts/skill.test.ts",
+      "sha256": "4a01248292c6414538ceb18a840e85e6c9ce2e9f87c2b8b06c0c614627f5cf07",
+      "reason": "build/test scripts",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "scripts/smoke.ts",
+      "destination_relative_path": "scripts/smoke.ts",
+      "sha256": "e284fe55f6f027464645046651259520da5a1d5b134138e237b01ec3895abcc6",
+      "reason": "build/test scripts",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "skills/holmes/SKILL.md",
+      "destination_relative_path": "skills/holmes/SKILL.md",
+      "sha256": "c087e53c9054a9d606a1cc060da8c3652ecca010f2fbd47cca6ba98c39f617ea",
+      "reason": "skill definition and public reference docs",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "skills/holmes/references/traces-desk.md",
+      "destination_relative_path": "skills/holmes/references/traces-desk.md",
+      "sha256": "d7125b83a469d0441c0e978d1fc824aeb47cd7b171bcf50a69861d62842615a4",
+      "reason": "skill definition and public reference docs",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "skills/holmes/references/traces-desk.zh.md",
+      "destination_relative_path": "skills/holmes/references/traces-desk.zh.md",
+      "sha256": "8b1bb4a12c7e37a7449f8576d4f41d3eda08bb1836574802219e3af0848b5bb6",
+      "reason": "skill definition and public reference docs",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "skills/holmes/references/traces-person.md",
+      "destination_relative_path": "skills/holmes/references/traces-person.md",
+      "sha256": "1d6b64825f071dfa926a41f8a1af2f2386ece7cb5f58187241ce36283a350b6d",
+      "reason": "skill definition and public reference docs",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "skills/holmes/references/traces-person.zh.md",
+      "destination_relative_path": "skills/holmes/references/traces-person.zh.md",
+      "sha256": "1dac8962bf090dbd767fb821422864f9fb8a7c0210dd45c9d4fc2ff471fcd25b",
+      "reason": "skill definition and public reference docs",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/index.css",
+      "destination_relative_path": "src/index.css",
+      "sha256": "068daf9475970ecc76c6ddbae780c4fa80f588b4cf18b4e6911b7a9946dcba76",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/lib/i18n.ts",
+      "destination_relative_path": "src/lib/i18n.ts",
+      "sha256": "c1a40f248603f2328ebecaac9a5eb7c52c2f9529905e5b55c229f317d9e4ca64",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/lib/image.ts",
+      "destination_relative_path": "src/lib/image.ts",
+      "sha256": "7e0864431bceef49bea786559770ec6b5d7be4b8eca82477ac3b0035d72691be",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/lib/share.test.ts",
+      "destination_relative_path": "src/lib/share.test.ts",
+      "sha256": "d5153987e7c201b59b6c475a00f5791391416805fcebe32e98d1c3dfadf17f58",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/lib/share.ts",
+      "destination_relative_path": "src/lib/share.ts",
+      "sha256": "58dfc94c47ce720eb7ad85aa713ab29242f7f3b6b25bd8161f5f8ae44752ec0b",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/lib/shareImage.ts",
+      "destination_relative_path": "src/lib/shareImage.ts",
+      "sha256": "a2d77717a2effd0eeede1ed4e06231254f8cfb587e17d1f34ec52657c7ccb8d3",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/lib/storage.ts",
+      "destination_relative_path": "src/lib/storage.ts",
+      "sha256": "ec6a3ce622f51f5cd08ad5510b82208ece4c32866a502f00428d669b317c7c9d",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/main.tsx",
+      "destination_relative_path": "src/main.tsx",
+      "sha256": "caddc02cc4c1698eb7b7dbaa50c18689f592b050dd46283d420764448866af0c",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/pipeline/parse.test.ts",
+      "destination_relative_path": "src/pipeline/parse.test.ts",
+      "sha256": "e8e3bb814452af01eca4522388ffe7211f3531596a16197b77ccf28162b97cea",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/pipeline/parse.ts",
+      "destination_relative_path": "src/pipeline/parse.ts",
+      "sha256": "fa21bb014cefbb693536e448b916d0ceeb94e1d2f53f7d2be342a4a4abb26b97",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/pipeline/prompts.test.ts",
+      "destination_relative_path": "src/pipeline/prompts.test.ts",
+      "sha256": "be0b85532f0e33116f85e97a6350752d992f27ca5b9fbb860b55140f13712893",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/pipeline/prompts.ts",
+      "destination_relative_path": "src/pipeline/prompts.ts",
+      "sha256": "902129525fef364c54159815ae3be6a04aa69a79d34d2da06f5c98a4d26d80e1",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/pipeline/providers/anthropic.ts",
+      "destination_relative_path": "src/pipeline/providers/anthropic.ts",
+      "sha256": "b28cf3362e50f6773c078587ffd44bf12620d3c573798112daf717988623453c",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/pipeline/providers/gemini.ts",
+      "destination_relative_path": "src/pipeline/providers/gemini.ts",
+      "sha256": "92f47e46e66243cee3a41b8333c6c9e4937b94c1ba6806e602be6e282e5fe3d8",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/pipeline/providers/index.ts",
+      "destination_relative_path": "src/pipeline/providers/index.ts",
+      "sha256": "8ff13d5e471b5990446cd73bbe0e0b95bc44d8661b7f5949f0d32210972dbf16",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/pipeline/providers/openai-compat.ts",
+      "destination_relative_path": "src/pipeline/providers/openai-compat.ts",
+      "sha256": "99c8435632e8f7f66b4dbafb830d99ae81ed839a0c82f4bf2224d569b96e7e7b",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/pipeline/providers/types.ts",
+      "destination_relative_path": "src/pipeline/providers/types.ts",
+      "sha256": "35bfbddb0c8dbde49a6a74029c9c33c66f965761cdce5027eb0f431f5369f3ef",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/pipeline/run.test.ts",
+      "destination_relative_path": "src/pipeline/run.test.ts",
+      "sha256": "dcaa0d1b1f6e094bbdacb7b05b890446be65d28e9fc4a9969e8d5bd61d6d8a7d",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/pipeline/run.ts",
+      "destination_relative_path": "src/pipeline/run.ts",
+      "sha256": "30278e1f59613c202eb7e158a4d4078e087b340e401ca4e23c21e4e1ffe47913",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/pipeline/types.ts",
+      "destination_relative_path": "src/pipeline/types.ts",
+      "sha256": "96b74bb15bad44645ddd08dc7d7626a81de1078b87bb85d1ccc456d3a18178a9",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/traces/classics.ts",
+      "destination_relative_path": "src/traces/classics.ts",
+      "sha256": "dce67f0949ce3720d01d7eb4188c183b89472be7895389e0a9c4560f3d2a9fff",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/traces/desk.ts",
+      "destination_relative_path": "src/traces/desk.ts",
+      "sha256": "a14aa3beacd6e1586bd5613dba49a4f05a82762d3077ac11e52e1c9fc34b9d6c",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/traces/devices.ts",
+      "destination_relative_path": "src/traces/devices.ts",
+      "sha256": "81a809d4af333419a8696e228f585d52456e299daf8eb84f0623f819310c3f78",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/traces/index.ts",
+      "destination_relative_path": "src/traces/index.ts",
+      "sha256": "94eccc382676ffc630b9370ebf9e09ff263d3c76b684b72360fec69b9b1a577f",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/traces/person.ts",
+      "destination_relative_path": "src/traces/person.ts",
+      "sha256": "61a53d550a318bd8d07d35784d8f454357fbf2acea83fbae63c7948c443ee779",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/traces/room.ts",
+      "destination_relative_path": "src/traces/room.ts",
+      "sha256": "9ed63d08b3c9bd1ec4c5b6b7a242ec004e29242cc11fda5f6eff3c995660c1f3",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/traces/traces.test.ts",
+      "destination_relative_path": "src/traces/traces.test.ts",
+      "sha256": "f2281e1fdcb88bbe417014f403205570bdc548e26b79d71802dbe076c3d679f1",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/traces/types.ts",
+      "destination_relative_path": "src/traces/types.ts",
+      "sha256": "9c6941fa86361958a10365dfc983710e94e1cc038d2685c25d1453a9c93c95a1",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/ui/App.tsx",
+      "destination_relative_path": "src/ui/App.tsx",
+      "sha256": "456458fdea94ac85b8021928d1f1dcf1000460e39f6a373735393f318eae0739",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/ui/ModePicker.tsx",
+      "destination_relative_path": "src/ui/ModePicker.tsx",
+      "sha256": "e08254875bd4adeb120951d1abd689921cfa7c6bf8032a58c1b652b8b19fadf6",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/ui/PhotoPicker.tsx",
+      "destination_relative_path": "src/ui/PhotoPicker.tsx",
+      "sha256": "017a1039a25b076b96573298fdd07da8dafccc387df3f7d3e6e2c8cb02d2b06d",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/ui/Replay.tsx",
+      "destination_relative_path": "src/ui/Replay.tsx",
+      "sha256": "dee7824cf78c6aec1a39ac9edac8711f4e4d6731d06276ccb1755b8290f79592",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/ui/ResultView.tsx",
+      "destination_relative_path": "src/ui/ResultView.tsx",
+      "sha256": "0b0708ff11b85eb1e7a95d2a3912c178459910c0b99a0740b23b650e75aca250",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/ui/SettingsPanel.tsx",
+      "destination_relative_path": "src/ui/SettingsPanel.tsx",
+      "sha256": "eec594e9b910b3569e5c91a66e0fc9da2c75aa0e9e0f1d0b6b4a9dbd98f3ac21",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/ui/ShareCard.tsx",
+      "destination_relative_path": "src/ui/ShareCard.tsx",
+      "sha256": "5b30fcc082c90d9393cd780c126259c04b8e0164b045882c6cdad2254cc23b36",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/ui/cases/desk-0910.ts",
+      "destination_relative_path": "src/ui/cases/desk-0910.ts",
+      "sha256": "8cca3befd66e07e4fd05e57155511c8cacd8d775f55b45c646cd653c1281e45c",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "src/ui/demo.ts",
+      "destination_relative_path": "src/ui/demo.ts",
+      "sha256": "c46087b5825055e2c649e0fc66fe6de4bc850f2225f3dd21502ddb6ff948f7d6",
+      "reason": "application source",
+      "classification": "public-source"
+    },
+    {
+      "source_relative_path": "tsconfig.app.json",
+      "destination_relative_path": "tsconfig.app.json",
+      "sha256": "37b9920a89126d5b8d084740a490387168cdb82340309ba8a623b7accbafed66",
+      "reason": "ts config",
+      "classification": "public-build-config"
+    },
+    {
+      "source_relative_path": "tsconfig.json",
+      "destination_relative_path": "tsconfig.json",
+      "sha256": "ad28d132ee48d6e23917cf5827cace785d0fc01a44ca68b0dda51cc8c3fd3f52",
+      "reason": "ts config",
+      "classification": "public-build-config"
+    },
+    {
+      "source_relative_path": "tsconfig.node.json",
+      "destination_relative_path": "tsconfig.node.json",
+      "sha256": "c17b829cb2996aea3ad5f9b7973c03770bba478c0e95cf82742d274926909862",
+      "reason": "ts config",
+      "classification": "public-build-config"
+    },
+    {
+      "source_relative_path": "vite.config.ts",
+      "destination_relative_path": "vite.config.ts",
+      "sha256": "69448b14b3b132166b5ee0561421884844787f57275534333aa8db43910bca23",
+      "reason": "build config",
+      "classification": "public-build-config"
+    }
+  ],
+  "excluded_summary": {
+    "agent-local-config": 1
+  },
+  "extras": [
+    {
+      "destination_relative_path": "CHANGELOG.md",
+      "sha256": "8732150af5cb9162b1e9a9afe2c34bb6ba0454b67bca19efd192fd3f36fb79aa",
+      "reason": "new file: release notes baseline (v0.1.0 initial public release)",
+      "classification": "public-docs"
+    }
+  ],
+  "totals": {
+    "copied": 71,
+    "excluded": 1,
+    "extras": 1
+  }
+}

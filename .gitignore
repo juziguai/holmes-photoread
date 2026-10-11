@@ -1,0 +1,18 @@
+node_modules
+dist
+.env
+.env.local
+*.local
+logs/*
+!logs/.gitkeep
+photos/*
+!photos/.gitkeep
+
+# 内部工作文档：留在本地，不进公开仓库
+# 公开仓库只出两样东西：README 和 skills/ 里的产品本体
+CLAUDE.md
+AGENTS.md
+STATUS.md
+PLAN.md
+DESIGN.md
+public/README-case-photo.txt

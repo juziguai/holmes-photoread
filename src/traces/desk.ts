@@ -1,0 +1,348 @@
+import type { Trace } from './types'
+
+export const DESK_TRACES: Trace[] = [
+  {
+    id: 'desk.dual-monitor',
+    domain: 'desk',
+    zh: '两台及以上显示器，或显示器支架',
+    en: 'Two or more monitors, or a monitor arm',
+    causes: [
+      { zh: '长时间伏案用电脑，多窗口并行的工作（写代码、设计、看盘、剪辑）', en: 'Long hours at a computer with parallel windows (coding, design, trading, editing)', weight: 'strong' },
+      { zh: '居家办公且设备可报销', en: 'Works from home with employer-paid gear', weight: 'weak' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.mech-keyboard',
+    domain: 'desk',
+    zh: '机械键盘，尤其是自换键帽或客制化',
+    en: 'Mechanical keyboard, especially with custom keycaps',
+    causes: [
+      { zh: '程序员或重度打字者', en: 'Programmer or heavy typist', weight: 'medium' },
+      { zh: '有"折腾装备"的圈子消费习惯', en: 'Hobbyist gear culture (keyboard community)', weight: 'medium' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.keyboard-shine',
+    domain: 'desk',
+    zh: '键帽油光或磨损集中在某些键',
+    en: 'Keycap shine or wear concentrated on certain keys',
+    causes: [
+      { zh: 'WASD 与空格油光：长期打游戏', en: 'Shine on WASD and space: long hours of gaming', weight: 'strong' },
+      { zh: '字母区整体油光：重度打字', en: 'Even shine across letters: heavy typing', weight: 'medium' },
+      { zh: '小键盘区磨损：财务、数据录入', en: 'Numpad wear: finance or data entry', weight: 'medium' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.wrist-rest-wear',
+    domain: 'desk',
+    zh: '腕托变色、塌陷',
+    en: 'Discolored or flattened wrist rest',
+    causes: [
+      { zh: '每天长时间同一姿势用键盘鼠标', en: 'Same posture at keyboard and mouse for hours daily', weight: 'strong' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.mouse-left',
+    domain: 'desk',
+    zh: '鼠标在键盘左侧',
+    en: 'Mouse on the left side of the keyboard',
+    causes: [
+      { zh: '左撇子', en: 'Left-handed', weight: 'strong' },
+      { zh: '右手受伤或刻意换手', en: 'Right hand injured or deliberately switching hands', weight: 'weak' },
+    ],
+    source: 'common',
+    caution: { zh: '前置摄像头自拍可能镜像；桌面照通常不镜像', en: 'Front-camera selfies may be mirrored; desk photos usually are not' },
+  },
+  {
+    id: 'desk.cable-managed',
+    domain: 'desk',
+    zh: '线材有理线器、走线槽、扎带',
+    en: 'Cables routed with clips, trays, or ties',
+    causes: [
+      { zh: '秩序型、爱折腾的工程师审美', en: 'Order-loving tinkerer / engineer aesthetic', weight: 'medium' },
+      { zh: '桌子是自己一手布置的，不是公司统配', en: 'Self-built setup rather than company-issued', weight: 'medium' },
+    ],
+    source: 'common',
+    caution: { zh: '线乱是基础状态，乱不构成信息', en: 'Tangled cables are the base rate; mess on its own carries no information' },
+  },
+  {
+    id: 'desk.multi-cups',
+    domain: 'desk',
+    zh: '桌上同时有多个杯子或瓶子',
+    en: 'Several cups or bottles at once',
+    causes: [
+      { zh: '长时间不离桌，喝完不收', en: 'Rarely leaves the desk; cups pile up', weight: 'medium' },
+      { zh: '独自使用这张桌，没人催收', en: 'Sole user of the desk, nobody to nag', weight: 'weak' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.thermos-tea',
+    domain: 'desk',
+    zh: '保温杯里泡着茶叶或枸杞',
+    en: 'Thermos with loose tea leaves or goji berries',
+    causes: [
+      { zh: '年龄偏大或"养生"取向', en: 'Older, or into wellness habits', weight: 'medium' },
+    ],
+    region: 'mainland-china',
+    source: 'common',
+  },
+  {
+    id: 'desk.coffee-gear',
+    domain: 'desk',
+    zh: '手冲壶、磨豆机、挂耳包、胶囊机',
+    en: 'Pour-over kettle, grinder, drip bags, capsule machine',
+    causes: [
+      { zh: '咖啡依赖，早上第一件事', en: 'Coffee dependency, first thing in the morning', weight: 'strong' },
+      { zh: '有"仪式感消费"的余裕', en: 'Spends on ritual and gear', weight: 'weak' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.energy-drinks',
+    domain: 'desk',
+    zh: '功能饮料或能量饮料的空罐',
+    en: 'Empty energy drink cans',
+    causes: [
+      { zh: '熬夜赶工、加班或通宵打游戏', en: 'Late-night crunch, overtime, or all-night gaming', weight: 'medium' },
+      { zh: '学生备考', en: 'Student cramming', weight: 'weak' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.sticky-notes',
+    domain: 'desk',
+    zh: '便利贴贴在显示器边缘',
+    en: 'Sticky notes along the monitor bezel',
+    causes: [
+      { zh: '待办驱动，依赖外置记忆', en: 'Todo-driven, relies on external memory', weight: 'medium' },
+      { zh: '贴的是命令、快捷键或账号提示：新手期或多系统切换', en: 'Notes are commands/shortcuts/logins: onboarding or juggling systems', weight: 'weak' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.plant-healthy',
+    domain: 'desk',
+    zh: '绿植长势好',
+    en: 'Plants thriving',
+    causes: [
+      { zh: '有稳定照料习惯，在家时间多', en: 'Steady care routine; spends a lot of time at home', weight: 'medium' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.plant-dead',
+    domain: 'desk',
+    zh: '绿植枯萎，或是假花假草',
+    en: 'Dead plant, or plastic plants',
+    causes: [
+      { zh: '经常出差、常不在家，或买了就忘', en: 'Travels often, rarely home, or bought-and-forgot', weight: 'medium' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.laptop-stickers',
+    domain: 'desk',
+    zh: '笔记本盖子上的贴纸',
+    en: 'Stickers on the laptop lid',
+    causes: [
+      { zh: '技术会议、开源项目、编程语言 logo：开发者', en: 'Tech conference / open-source / language logos: developer', weight: 'strong' },
+      { zh: '乐队、动漫、品牌贴纸：圈层身份，年龄偏轻', en: 'Band / anime / brand stickers: subculture identity, younger', weight: 'medium' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.two-laptops',
+    domain: 'desk',
+    zh: '两台笔记本，其中一台贴资产标签',
+    en: 'Two laptops, one with an asset tag',
+    causes: [
+      { zh: '公司电脑加私人电脑，远程或混合办公', en: 'Work laptop plus personal laptop; remote or hybrid work', weight: 'strong' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.baby-items',
+    domain: 'desk',
+    zh: '婴儿监视器、奶瓶、儿童玩具入镜',
+    en: 'Baby monitor, bottle, or kids toys in frame',
+    causes: [
+      { zh: '家里有小孩，且桌子在起居空间里', en: 'Has a young child; desk sits in living space', weight: 'strong' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.cat-signs',
+    domain: 'desk',
+    zh: '猫毛、猫抓板、猫爬架，或猫直接趴在键盘上',
+    en: 'Cat hair, scratcher, cat tree, or a cat on the keyboard',
+    causes: [
+      { zh: '养猫', en: 'Has a cat', weight: 'strong' },
+      { zh: '猫在键盘上：这台电脑不常收起，猫比工作优先', en: 'Cat on keyboard: the computer never gets put away; cat outranks work', weight: 'weak' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.dog-signs',
+    domain: 'desk',
+    zh: '狗窝、牵引绳、狗毛',
+    en: 'Dog bed, leash, dog hair',
+    causes: [
+      { zh: '养狗，每天要遛，作息被狗定', en: 'Has a dog; daily walks set the schedule', weight: 'strong' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.gaming-setup',
+    domain: 'desk',
+    zh: '电竞椅、RGB 灯、外接手柄、耳机架',
+    en: 'Gaming chair, RGB lighting, controller, headset stand',
+    causes: [
+      { zh: '游戏是主要娱乐，年龄偏轻', en: 'Gaming is the main hobby; younger', weight: 'medium' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.ergo-chair',
+    domain: 'desk',
+    zh: '高价人体工学椅',
+    en: 'Premium ergonomic chair',
+    causes: [
+      { zh: '久坐职业且愿意为身体花钱，或公司配发', en: 'Sedentary job, spends on the body, or company-issued', weight: 'medium' },
+      { zh: '为久坐付过代价', en: 'Has paid the price of sitting before', weight: 'weak' },
+    ],
+    source: 'common',
+    caution: { zh: '不写成健康推断，只说"为久坐花过钱"', en: 'Not a health inference: say only that they spent money on sitting comfortably' },
+  },
+  {
+    id: 'desk.exam-books',
+    domain: 'desk',
+    zh: '考试教材、真题、词汇书（考研 / CPA / 雅思 / 公考）',
+    en: 'Exam prep books (grad entrance, CPA, IELTS, civil service)',
+    causes: [
+      { zh: '正在备考，处在人生切换期', en: 'Preparing for an exam; at a life transition', weight: 'strong' },
+      { zh: '书崭新塑封未拆：买了还没开始', en: 'Still shrink-wrapped: bought, not started', weight: 'medium' },
+    ],
+    region: 'mainland-china',
+    source: 'common',
+  },
+  {
+    id: 'desk.book-condition',
+    domain: 'desk',
+    zh: '书脊翻旧、贴满索引贴，或崭新成排',
+    en: 'Books worn with index tabs, or pristine rows',
+    causes: [
+      { zh: '翻旧贴标：真读且做笔记', en: 'Worn and tabbed: actually read and annotated', weight: 'strong' },
+      { zh: '崭新成排：装饰或囤书', en: 'Pristine rows: decor or hoarding', weight: 'medium' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.books-domain',
+    domain: 'desk',
+    zh: '书的领域高度集中',
+    en: 'Books clustered in one field',
+    causes: [
+      { zh: '职业或正在深耕的爱好就是那个领域', en: 'Profession or a serious hobby in that field', weight: 'strong' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.tablet-pencil',
+    domain: 'desk',
+    zh: '平板加触控笔',
+    en: 'Tablet with a stylus',
+    causes: [
+      { zh: '学生记笔记、画画或看文献', en: 'Student note-taking, drawing, or reading papers', weight: 'medium' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.mic-light-cam',
+    domain: 'desk',
+    zh: '专业麦克风、环形灯、外置摄像头',
+    en: 'Studio mic, ring light, external webcam',
+    causes: [
+      { zh: '做内容（直播 / 播客 / 视频）或会议极多', en: 'Creates content (streaming/podcast/video) or lives in meetings', weight: 'strong' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.multi-phones',
+    domain: 'desk',
+    zh: '两部及以上手机',
+    en: 'Two or more phones',
+    causes: [
+      { zh: '工作机加私人机（销售、运营、客服）', en: 'Work phone plus personal phone (sales, ops, support)', weight: 'medium' },
+      { zh: '开发测试机', en: 'Developer test devices', weight: 'medium' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.dust-gradient',
+    domain: 'desk',
+    zh: '有的设备干净、周边积灰',
+    en: 'Some items dust-free while their surroundings are dusty',
+    causes: [
+      { zh: '干净的是每天用的，积灰的是买了不用的', en: 'Clean things are used daily; dusty things were bought and abandoned', weight: 'strong' },
+    ],
+    source: 'common',
+    caution: { zh: '福尔摩斯式经典痕迹：比"有什么"更能说明"用什么"', en: 'A classic Holmesian trace: what is worn tells you more than what is owned' },
+  },
+  {
+    id: 'desk.takeout',
+    domain: 'desk',
+    zh: '外卖盒、一次性餐具',
+    en: 'Takeout containers, disposable cutlery',
+    causes: [
+      { zh: '在桌上吃饭，做饭少', en: 'Eats at the desk; rarely cooks', weight: 'medium' },
+      { zh: '独居可能性偏高', en: 'More likely lives alone', weight: 'weak' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.figures',
+    domain: 'desk',
+    zh: '手办、盲盒、乐高、周边',
+    en: 'Figures, blind boxes, Lego, merch',
+    causes: [
+      { zh: '二次元或收藏圈；摆放整齐说明精心陈列而非随手放', en: 'Anime/collector circles; neat arrangement means curated display', weight: 'medium' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.travel-receipts',
+    domain: 'desk',
+    zh: '登机牌、车票、酒店房卡、停车票',
+    en: 'Boarding pass, tickets, hotel key card, parking stub',
+    causes: [
+      { zh: '最近出过门，时间地点可从票面读', en: 'Traveled recently; date and place readable from the ticket', weight: 'strong' },
+    ],
+    source: 'Elementary S1E1',
+  },
+  {
+    id: 'desk.lamp-daytime',
+    domain: 'desk',
+    zh: '白天开着台灯、拉着窗帘',
+    en: 'Desk lamp on in daytime, curtains drawn',
+    causes: [
+      { zh: '作息偏夜，或对光敏感', en: 'Night-owl schedule, or light-sensitive', weight: 'weak' },
+    ],
+    source: 'common',
+  },
+  {
+    id: 'desk.medication',
+    domain: 'desk',
+    zh: '药瓶、保健品',
+    en: 'Pill bottles, supplements',
+    causes: [
+      { zh: '禁区：不推断健康状况；保健品最多弱推"注重养生"', en: 'Off-limits: never infer health; supplements at most weakly suggest wellness habits', weight: 'weak' },
+    ],
+    source: 'common',
+    caution: { zh: '敏感类别，见 SENSITIVE_BLOCKLIST', en: 'Sensitive category, see SENSITIVE_BLOCKLIST: skip it entirely' },
+  },
+]

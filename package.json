@@ -1,0 +1,35 @@
+{
+  "name": "holmes-skill",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "An agent skill that reads a photo the way Sherlock Holmes reads a stranger: observe first, deduce second, every conclusion cites its evidence and you grade it.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc -b",
+    "probe": "tsx scripts/probe.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "build:skill": "tsx scripts/build-skill.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.124.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.5.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2",
+    "vitest": "^5.0.0"
+  }
+}
